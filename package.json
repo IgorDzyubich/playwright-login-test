@@ -1,0 +1,25 @@
+{
+  "name": "login_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "lint": "eslint --fix .",
+    "test:ui": "npx playwright test --ui",
+    "clean": "rm -R -f allure-report/* && rm -R -f allure-results/* && rm -R -f playwright-report/* && rm -R -f test-results/*",
+    "report": "allure generate allure-results --clean && allure open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.1",
+    "allure-playwright": "^3.0.7",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
